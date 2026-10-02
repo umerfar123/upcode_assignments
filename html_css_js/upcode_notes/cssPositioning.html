@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        header{
+            background-color: lightcyan;
+            min-height: 10vh;
+            min-width: 100%;
+            position: fixed;
+            
+        }
+        .content{
+            background-color: yellow;
+            height: 1000px;
+            position: static;
+
+        }
+        .box{
+            border: 1px solid black;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            height: 100px;
+            width: 100px;
+
+        }
+        footer{
+            background-color: lightpink;
+            min-height: 10vh;
+            position: relative;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="content">
+        <div class="box"></div>
+    </div>
+    <footer></footer>
+</body>
+</html>

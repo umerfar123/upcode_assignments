@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      main {
+        background-color: lightgray;
+        height: 100vh;
+        margin: 2%;
+        border: 1px black solid;
+      }
+      label{
+        margin: 6px;
+      }
+      input[type=text],input[type=password]{
+        margin: 6px;
+        width: 90%;
+        height: 2vh;
+        border: 2px lightseagreen solid;
+        border-radius: 5px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="page_layout">
+      <header></header>
+      <main>
+        <div class="form_layout">
+          <form action="../upcode_assignments/articleIndia_Umer.html">
+
+            <label for="username">Username:</label><br>
+            <input id="username" type="text" name="username"/><br/>
+            <br>
+            <label for="password">Password:</label><br />
+            <input id="password" type="password" name="password" /><br />
+            <br>
+            <input id="gender_male" type="radio" name="gender" value="male">
+            <label for="gender_male">Male</label><br>
+            <input id="gender_female" type="radio" name="gender" value="female">
+            <label for="gender_female">Female</label><br>
+            <br>
+            <input type="checkbox" name="married" id="married">
+            <label for="marital_status">Married</label><br>
+            <input type="checkbox" name="unmarried" id="unmarried">
+            <label for="unmarried">Unmarried</label><br>
+            <br>
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="kerala">Kerala</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Goa">Goa</option>
+            </select><br>
+            <br>
+            <textarea name="comments" id="comments">Any Comments</textarea><br>
+            <br>
+            <button onclick="alert('Confirm Submission')">Submit</button>
+            
+          </form>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+
+        *{
+            margin: 0px;
+        }
+
+        h1{
+            text-align: center;
+        }
+        p{
+            margin-top: 5px;
+            font-size: large;
+        }
+        .mainContainer{
+            display: flex;
+            flex-direction: column;
+
+            height: 100vh;
+            background-color: lightgray;
+        }
+        header{
+            flex: 0.5;
+            background-color: aqua;
+            display: flex;
+        }
+
+        .logo{
+            flex: 1;
+        }
+        .header_desc{
+            flex: 5;
+            border: 2px lightgrey solid;
+            margin: 1px;
+        }
+        nav{
+            flex: 0.3;
+            background-color: lightgoldenrodyellow;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            flex: 7;
+            background-color: lightcoral;
+            padding: 50px;
+        }
+        .box{
+            border: 2px black solid;
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+            text-align: center;
+            padding-top: 40px;
+        }
+        footer{
+            flex: 0.5;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <header>
+            <div class="logo">
+                <h1>logo</h1>
+            </div>
+            <div class="header_desc">
+                <h1>layout using flexbox</h1>
+            </div>
+        </header>
+        <nav>
+            <h1>navigation content here</h1>
+        </nav>
+        <div class="main">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+        </div>
+        <footer>
+            <h1>footer content</h1>
+        </footer>
+    </div>
+</body>
+</html>

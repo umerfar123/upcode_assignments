@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cssSelectors</title>
+
+    <style>
+      .container {
+        font-style: italic;
+        text-align: center;
+        color: blue;
+      }
+
+      .container > p {
+        font-size: x-large;
+      }
+
+      .container:hover{
+        color: red;
+      }
+
+      #para1 {
+        color: red;
+      }
+      a{
+        text-decoration: none;
+      }
+
+      a:visited{
+        color: red;
+      }
+      a:hover{
+        font-size: x-large;
+        color: green;
+      }
+      a:active{
+        color: aqua;
+      }
+      a[href]{
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit
+        illo aut quaerat, fugiat nemo similique dignissimos dicta minus
+        architecto temporibus provident commodi voluptatum veritatis amet vel
+        quia, fuga assumenda!
+      </p>
+    </div>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, reiciendis
+      at. Tempore inventore consectetur nisi eveniet corporis, facilis nihil
+      eius debitis incidunt labore quibusdam omnis ea ullam, est dolorum
+      necessitatibus?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      perspiciatis ad dolore iusto beatae voluptatibus officiis, quis sed sint
+      doloremque vel ea. Blanditiis aliquid tempora odit cum id? Quam,
+      exercitationem?
+    </p>
+
+    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox1</a>
+    <a href="https://www.w3schools.com/css/css3_flexbox.asp">flexbox2</a>
+    <a >dummy link</a>
+  </body>
+</html>

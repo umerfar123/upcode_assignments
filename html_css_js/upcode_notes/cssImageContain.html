@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Contain</title>
+
+    <style>
+
+        html,body{
+            margin: 0;
+        }
+
+        .gallery{
+            background-color: lightgray;
+            height: 100vh;
+        }
+
+        .image{
+            width: 400px;
+            height: 600px;
+            border: 1px solid black;
+            background-color: aqua;
+            margin: 20px;
+        }
+        .image-cover{
+            object-fit: cover;
+        }
+        .image-contain{
+            object-fit: contain;
+        }
+        .image-none{
+            object-fit: none;
+        }
+        .image-sd{
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+
+        <img src="../images/c.png" alt="ghost3">
+
+        <img class="image" src="../images/c.png" alt="ghost3">
+        <img class="image image-contain" src="../images/c.png" alt="ghost3">
+        <img class="image image-cover" src="../images/c.png" alt="ghost3">
+        <img class="image image-none" src="../images/c.png" alt="ghost3">
+        <img class="image image-sd" src="../images/c.png" alt="ghost3">
+        
+        
+    </div>
+</body>
+</html>

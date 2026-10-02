@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+
+        html,body{
+            margin: 0px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .header{
+            border: 5px lightcoral solid;
+            background-color: lightgray;
+            height: 20vh;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            border: 5px lightblue solid;
+            background-color: lightgray;
+            height: 60vh;
+        }
+        .section1{
+            display: flex;
+            border: 2px lightsalmon solid;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .section2{
+            display: flex;
+            border: 2px lightseagreen solid;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .section3{
+            display: flex;
+            border: 2px blue solid;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+        .section4{
+            display: flex;
+            border: 2px violet solid;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .box{
+            border: 3px red solid;
+            width: 100px;
+            height: 100px;
+            margin: 4px;
+        }
+        .footer{
+            border: 5px lightgreen solid;
+            background-color: lightgray;
+            height: 20vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="https://www.w3schools.com/css/css3_flexbox.asp">Flexbox Notes</a>
+    </div>
+    <div class="main">
+        <div class="section1">
+            <div class="box"><h1>1</h1></div>
+            <div class="box"><h1>2</h1></div>
+            <div class="box"><h1>3</h1></div>
+            <div class="box"><h1>4</h1></div>
+        </div>
+        <div class="section2">
+            <div class="box"><h1>5</h1></div>
+            <div class="box"><h1>6</h1></div>
+            <div class="box"><h1>7</h1></div>
+            <div class="box"><h1>8</h1></div>
+        </div>
+        <div class="section3">
+            <div class="box"><h1>9</h1></div>
+            <div class="box"><h1>10</h1></div>
+            <div class="box"><h1>11</h1></div>
+            <div class="box"><h1>12</h1></div>
+        </div>
+        <div class="section4">
+            <div class="box"><h1>13</h1></div>
+            <div class="box"><h1>14</h1></div>
+            <div class="box"><h1>15</h1></div>
+            <div class="box"><h1>16</h1></div>
+        </div>
+        
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
