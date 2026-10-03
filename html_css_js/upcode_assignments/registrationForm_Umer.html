@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        main{
+            background-color: lightgreen;
+            max-width: 60vw;
+            margin: 0 auto;
+            padding: 1% 0%;
+            border-radius: 15px;
+        }
+
+        .reg_form{
+            display: grid;
+            grid-template-columns: 40% 50%;
+            gap: 12px 16px;
+            margin-top: 5%;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .reg_form label{
+            text-align: right;
+            font-weight: bold;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 1%;
+        }
+
+        button{
+            background-color: lightblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Employee Registration Form</h1>
+    </header>
+    <main>
+     
+        <form action="" class="reg_form">
+            <label for="name">Full Name</label>
+            <input id="name"  type="text">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="sample@gmail.com">
+
+            <label for="password">Password</label>
+            <input id="password" type="password">
+
+            <label for="confirm_password">Confirm Password</label>
+            <input id="confirm_password" type="password">
+
+            <label for="multi_gender">Gender</label>
+            <div id="multi_gender" class="multi_select">
+                <input id="gender" type="radio" name="gender" value="male" placeholder="Male">
+                <label for="gender">Male</label>
+
+                <input id="gender" type="radio" name="gender" value="female" placeholder="Female">
+                <label for="gender">Female</label>
+            </div>
+            
+            <label for="dob">DOB</label>
+            <input id="dob" type="date">
+
+            <label for="mobile_no">Mobile</label>
+            <input id="mobile_no" type="number">
+
+            <label for="resume">Resume</label>
+            <input id="resume" type="file">
+
+            <label for="multi_pc">Physically Challenged</label>
+            <div id="multi_pc" class="multi_select">
+                <input type="checkbox" name="physically challenged" id="physically challenged">
+                <label for="physically challenged">(Check If Physically Challenged)</label>
+            </div>
+            
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+            </select>
+
+            <label for="address">address</label>
+            <textarea name="address" id="address" rows="5">
+                Type your address here
+            </textarea>
+        </form>
+
+        <footer>
+            <button >Submit</button>
+            <button>Clear</button>
+        </footer>
+        
+    </main>
+
+</body>
+</html>
