@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Object</title>
+</head>
+<body>
+    <h1>Javascript Object</h1>
+    <script>
+        var obj1 = {
+            name : "Santhosh",
+            age : 26,
+            address : {
+                pincode:675302,
+                state: "kerala",
+                district:"malappuram"
+            },
+            married:false,
+            job:"Engineer",
+
+            greet:function(){
+                console.log("Hello ",this.name)
+            }
+        };
+
+        obj1.greet()
+
+        console.log("Type of obj1 :",typeof(obj1));
+        console.log("Name:",obj1.name);
+        console.log("obj1:",obj1);
+    </script>
+</body>
+</html>
