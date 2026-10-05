@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiebot</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      ul {
+        list-style: none;
+      }
+      a {
+        color: antiquewhite;
+        text-decoration: none;
+      }
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+
+        color: white;
+      }
+      p {
+        color: white;
+      }
+
+      .home_layout {
+        display: flex;
+        flex-direction: column;
+      }
+      .section1 {
+        height: 70vh;
+        background-color: #3927a1;
+      }
+
+      header {
+        display: flex;
+        position: sticky;
+        align-items: center;
+        width: 80vw;
+        margin: 0 auto;
+      }
+      .logo_section {
+        width: 20%;
+        justify-content: left;
+      }
+      .nav_section {
+        width: 80%;
+        display: flex;
+        gap: 20px;
+        justify-content: right;
+        transition-duration: 0.2s;
+      }
+      .nav_section a:hover{
+        background-color: white;
+        padding: 8px;
+
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+        border-radius: 3px;
+
+        color: #3927a1;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+     
+      .descSection {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        margin: 0 auto;
+        position: relative;
+      }
+      .caption {
+        padding-top: 4%;
+        width: 70%;
+        z-index: 2;
+      }
+
+      .caption>h1{
+        font-size: 2.2em;
+      }
+      .caption > p {
+        line-height: 1.6;
+        font-size: 1.2em;
+      }
+      .callNowButton{
+        width: 15%;
+        height: 15%;
+        border: 0.1px solid white;
+        border-radius: 8px;
+      }
+      .callNowButton:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+        border-radius: 10px;
+      }
+      .callNowButton>a:hover{
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      .callNowButton>a{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #3927a1;
+      }
+
+      .image_section{
+        position: absolute;
+        right: 0px;
+        bottom: -160px;
+        z-index: 1;
+        text-align: right;
+      }
+
+      .stats_container{
+        display: flex;
+        width: 80vw;
+        margin: -40px auto -70px auto;
+        z-index: 10;
+        background-color: white;
+      }
+
+      .stat_card{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 40%;
+        padding: 20px 20px;
+
+        box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+        border-radius: 7px;
+      }
+
+      .num_stat{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        font-style: normal;
+        color: #3927a1;
+      }
+   
+      .section2 {
+        height: 30vh;
+      }
+
+      .section2 > h1 {
+        margin-top: 100px;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #0b0629;
+      }
+
+      .section2 > p {
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+      }
+
+      @media (width <= 1080px) {
+        /* .descSection{flex-direction: column;} */
+        .stats_container{flex-direction: column;align-items: center;}
+        .stat_card{width: 100%;box-shadow: 0px;}
+        .image_section{visibility: hidden;}
+        .caption{width: 100%;text-align: center;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home_layout">
+        <div class="section1">
+            <header>
+                <div class="logo_section">
+                    <h1>Kiebot Logo</h1>
+                </div>
+                <ul class="nav_section">
+                    <li class="nav-hover"><a href="">SERVICES</a></li>
+                    <li class="nav-hover"><a href="">PORTFOLIO</a></li>
+                    <li class="nav-hover"><a href="">INSIGHTS</a></li>
+                    <li class="nav-hover"><a href="">CAREERS</a></li>
+                    <li class="nav-hover"><a href="">COMPANY</a></li>
+                    <li class="nav-hover"><a href="">CONTACT</a></li>
+                </ul>
+            </header>
+            <div class="descSection">
+                <div class="caption">
+                    <h1>Agile Expert for Quality,</h1>
+                    <h1>Rapid, and Economical</h1>
+                    <h1>Software Solutions</h1>
+                    <p>
+                    Our team excels in Node.js, Nest.js, React, Next.js, Python,
+                    Java, Laravel, <br />
+                    Android, IOS, React Native, Flutter, and more. Seamlessly
+                    integrate our experts <br />
+                    into your projects for execeptional results.
+                    </p>
+                    <button class="callNowButton"><a href="">CALL NOW</a></button>
+                </div>
+                <div class="image_section">
+                    <img src="../images/ra-removebg-preview.png" alt="roboarm">
+                </div>
+            </div>
+        </div>
+
+        <div class="stats_container">
+            <div class="stat_card">
+                <span class="num_stat">4+</span>
+                <span class="desc_stat">Years</span>
+            </div>
+            <div class="stat_card">
+                <span class="num_stat">33+</span>
+                <span class="desc_stat">Clients</span>
+            </div>
+            <div class="stat_card">
+                <span class="num_stat">45+</span>
+                <span class="desc_stat">Projects</span>
+            </div>
+            <div class="stat_card">
+                <span class="num_stat">50+</span>
+                <span class="desc_stat">Engineers</span>
+            </div>
+        </div>
+
+        <div class="section2">
+            <h1>Our Services</h1>
+            <p>
+            At Kiebot, we're dedicated to delivering execellence in a wide range
+            of servies to meet your unique needs. Explore our comprehensive
+            offerings <br />
+            and discover Kiebot's approach, which sets us apart in the contect of
+            each service
+            </p>
+        </div>
+    </div>
+  </body>
+</html>
